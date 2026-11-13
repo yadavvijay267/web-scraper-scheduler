@@ -1,0 +1,31 @@
+Demo: scraping the bundled sample page (no network needed).
+Sample page: /home/hatch/workspace/phase1-projects/web-scraper-scheduler/assets/sample-page.html
+
+[run 1] file://sample-page.html
+[run 1]   Title: Sample News Page — Demo Only
+[run 1]   Headings: 4  Links: 3
+[run 1]   Selector 'h2': 2 match(es)
+[run 1]     - Headline: Local Library Reopens
+[run 1]     - Headline: Market Day Returns
+[run 1]   H1: Demo Daily — Sample Page
+[run 1]   H2: Headline: Local Library Reopens
+[run 1]   H2: Headline: Market Day Returns
+[run 1]   H3: Weather
+[run 1]   Change: first run — baseline saved.
+
+[run 2] file://sample-page.html
+[run 2]   Title: Sample News Page — Demo Only
+[run 2]   Headings: 4  Links: 3
+[run 2]   Selector 'h2': 2 match(es)
+[run 2]     - Headline: Local Library Reopens
+[run 2]     - Headline: Market Day Returns
+[run 2]   H1: Demo Daily — Sample Page
+[run 2]   H2: Headline: Local Library Reopens
+[run 2]   H2: Headline: Market Day Returns
+[run 2]   H3: Weather
+[run 2]   Change: unchanged since last run.
+
+Demo complete — second run reports 'unchanged' (change detection works).
+State file left at: /home/hatch/workspace/phase1-projects/web-scraper-scheduler/scraper-state.json (delete it to reset the baseline).
+
+[Note: the scraper-state.json created by this demo was removed afterwards to keep the folder clean; re-run --demo to recreate it.]

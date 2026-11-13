@@ -1,0 +1,11 @@
+# Example targets for web-scraper-scheduler
+#
+# Each target is a page to watch plus an optional CSS selector whose
+# matches are extracted on every run. Run it with:
+#   python3 src/scraper.py --config assets/config-example.yaml --interval 300 --runs 2
+
+targets:
+  - url: https://example.com
+    selector: h1
+  - url: https://example.com
+    selector: "p"
